@@ -1,0 +1,8 @@
+{
+  "name": "EmoSense B2B Analytics",
+  "description": "Enterprise-grade emotional sentiment analysis dashboard designed for B2B integration. Analyze customer feedback, support tickets, and employee surveys with actionable AI insights.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
