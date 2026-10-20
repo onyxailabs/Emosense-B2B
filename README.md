@@ -1,20 +1,34 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# EmoSense B2B — AI Customer Emotion Analytics Dashboard
 
-# Run and deploy your AI Studio app
+EmoSense B2B is a business dashboard that uses Google Gemini AI to analyze customer emotions and surface how customers feel about a brand, product, or interaction. Built for businesses that want fast, visual sentiment and emotion insights from customer text.
 
-This contains everything you need to run your app locally.
+## What it does
 
-View your app in AI Studio: https://ai.studio/apps/drive/1ac9ToEv2qyeNfHmdUmO7x_wbxcIt-bwg
+- **Emotion detection** — analyzes customer text or feedback and detects the emotions behind it, then shows a clear response automatically.
+- **B2B analytics dashboard** — visualizes customer emotion data for business teams in a single-page React app.
 
-## Run Locally
+## How it's built
 
-**Prerequisites:**  Node.js
+- `App.tsx` + `components/` — the React dashboard UI.
+- `services/geminiService.ts` — calls the Gemini AI API for emotion analysis.
+- `services/authService.ts` — authentication for the app.
+- `types.ts` — shared TypeScript data types.
+- `index.html` / `index.tsx` — app entry points; `metadata.json` — app metadata.
+- Vite + React + TypeScript.
 
+## Run it locally
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+npm install
+# create a .env.local file with your Gemini API key:
+# GEMINI_API_KEY=your_api_key_here
+npm run dev
+```
+
+## Tech stack
+
+React · TypeScript · Vite · Gemini AI
+
+---
+
+**Built by Muhammad Mohsin — Onyx AI** · [YouTube](https://www.youtube.com/@onyxaipk) · [All products](https://mohsina91.gumroad.com) · [Catalog](https://mohsinakramchandia91-bit.github.io/Catalog/)
